@@ -30,7 +30,7 @@
       {% if project.tagline %}
        <div class="intro">
        <! -- - <span class="project-tagline">{{ project.tagline }}</span> -->
-         <p>{{ project.tagline }}</p>
+         <p>{{ project.tagline | markdownify }}</p>
        </div><!--//intro-->
       {% endif %}
 
