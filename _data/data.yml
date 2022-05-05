@@ -172,8 +172,11 @@ skills:
     - name: TesorFlow & Pytorch
       level: 95%
 
-    - name: Scikit-learn, Numpy, Pandas & matplotlib
-      level: 98%
+    - name: Scikit-learn
+      level: 95%
+      
+    - name: Numpy, Pandas & matplotlib
+      level: 90%
 
     - name: Bash
       level: 95%
@@ -185,7 +188,7 @@ skills:
       level: 70%
 
     - name: C & C++
-      level: 60%
+      level: 55%
 
     - name: LaTex
       level: 80%
