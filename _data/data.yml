@@ -112,20 +112,20 @@ projects:
     assignments:
       - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (Facebook)
         link: "#hook"
-#         tagline: |
-#         - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
-#         - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
+        tagline: |
+        - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
+        - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
 
       - title: Deep Learning attacks against real-world CAPTCHA services
         link: "#"
-#         tagline: |
-#         - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
+        tagline: |
+        - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
 
       - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
         link: "#"
-#         tagline: |
-#         - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
-#         - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
+        tagline: |
+        - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
+        - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
 
 #       - title: Atom
 #         link: "#"
@@ -166,23 +166,39 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: Python
+        level: 90%
 
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
+      - name: TesorFlow & Pytorch
         level: 95%
 
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
+      - name: Scikit-learn, Numpy, Pandas & matplotlib
+        level: 98%
+        
+      - name: Bash   
+        level: 95%
+        
+      - name: SQL
+        level: 90%
+        
+      - name: JavaScript
+        level: 70%
+        
+      - name: C & C++   
         level: 60%
+        
+      - name: LaTex   
+        level: 80%
+        
+      - name: Linux
+        level: 100%
 
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+      - name: Git & Docker
+        level: 85%
+        
+      - name: GCP & AWS   
+        level: 85%
+      
+
+# footer: >
+#     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
