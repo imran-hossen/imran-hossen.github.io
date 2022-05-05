@@ -120,13 +120,13 @@ projects:
         link: "#"
         tagline: |
         - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
-
+        
       - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
         link: "#"
         tagline: |
         - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
         - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
-
+                
 #       - title: Atom
 #         link: "#"
 #         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
