@@ -29,143 +29,141 @@ sidebar:
     pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
-      - idiom: English
+      - idiom: Bangla
         level: Native
 
-      - idiom: French
+      - idiom: English
         level: Professional
 
-      - idiom: Spanish
-        level: Professional
+#       - idiom: Spanish
+#         level: Professional
 
-    interests:
-      - item: Climbing
-        link:
+#     interests:
+#       - item: Climbing
+#         link:
 
-      - item: Snowboarding
-        link:
+#       - item: Snowboarding
+#         link:
 
-      - item: Cooking
-        link:
+#       - item: Cooking
+#         link:
 
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+#       Summarise your career here lorem ipsum dolor sit amet, consectetuer
+#       adipiscing elit. You can [download this free resume/CV template here]().
+#       Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+#       penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+#       Donec quam felis, ultricies nec, pellentesque eu.
+#       Second paragraph if required.
 education:
     - degree: PhD in Computer Science
       university: University of Louisiana at Lafayette
       time: Aug 2021 - May 2022
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+#         Describe your study here lorem ipsum dolor sit amet, consectetuer
+#         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+#         sociis natoque penatibus et magnis dis parturient montes, nascetur
+#         ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+#         pretium quis, sem.
+          - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
+          - Advior: Dr. Xiali (Sharon) Hei
     - degree: Bachelor's in Electronics and Communication Engineering
       university: Khulna University of Engineering & Technology
       time: 2012 - 2016
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+#       details: |
+#         Describe your study here lorem ipsum dolor sit amet, consectetuer
+#         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+#         sociis natoque penatibus et magnis dis parturient montes, nascetur
+#         ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+#         pretium quis, sem.
+#           - Bullet point
+#           - Bullet point
 experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+    - role: Graduate Research Assistant
+      time: Aug 2018 – June 2019, June 2021 – May 2022
+      company: University of Louisiana at Lafayette, Lafayette, LA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+          - Member of the Wireless \& Embedded Device Security Lab advised by Professor Xiali Hei, focusing on CAPTCHA security and machine learning security
+          - Published and presented research at various top-tier computer security workshops and conferences
+    - role: Graduate Teaching Assistant
+      time: Jan 2020 - May 2021
+      company: University of Louisiana at Lafayette, Lafayette, LA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
+          - Introduction to Cyber Security (CMPS 315)
+    - role: Graduate Teaching Assistant
+      time: Aug 2019 – Dec 2019
+      company: University of Louisiana at Lafayette, Lafayette, LA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+          - Linux System Administration and Maintenance (INFX 450)
+#     - role: UI Developer
+#       time: 2012 - 2014
+#       company: Amazon, London
+#       details: |
+#         Describe your role here lorem ipsum dolor sit amet, consectetuer
+#         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+#         Cum sociis natoque penatibus et magnis dis parturient montes,
+#         nascetur ridiculus mus. Donec quam felis, ultricies nec,
+#         pellentesque eu, pretium quis, sem.
+#           - Bullet point
+#           - Bullet point
 projects:
     title: Projects
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#     intro: >
+#       You can list your side projects or open source libraries in this
+#       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: Velocity
+      - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (Facebook)
         link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+        tagline: "Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.\\
+        Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data"
 
-      - title: DevStudio
+      - title: Deep Learning attacks against real-world CAPTCHA services
         link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+        tagline: "Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet."
 
-      - title: Tempo
+      - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
         link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+        tagline: "Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.\
+        Implemented both the ML and DL models to classify the forum posts into different threat categories.\\
+        Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats."
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+#       - title: Atom
+#         link: "#"
+#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+#       - title: Delta
+#         link: "#"
+#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
     title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
     papers:
-      - title: The Art of Computer Programming
+      - title: "aaeCAPTCHA: The design and implementation of audio adversarial CAPTCHA"
         link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+        authors: Md Imran Hossen and Xiali Hei
+        conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&amp;P), 2022."
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+      - title: "A Low-Cost Attack against the hCaptcha System"
         link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+        authors: Md Imran Hossen and Xiali Hei
+        conference: "15th IEEE Workshop on Offensive Technologies (WOOT), 2021"
 
-      - title: A syntax directed compiler for Algol 60
+      - title: "An object detection based solver for Google's image reCAPTCHA v2"
         link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+        authors: Md Imran Hossen, Yazhou Tu, Md Fazle Rabby, Md Nazmul Islam, Hui Cao, and Xiali Hei
+        conference: "23rd International Symposium on Research in Attacks, Intrusions and Defenses (RAID), 2020"
+        
+      - title: "Stacked LSTM based deep recurrent neural network with kalman smoothing for blood glucose prediction"
+        link: "#"
+        authors: Md Fazle Rabby, Yazhou Tu, Md Imran Hossen, Insup Lee, Anthony S. Maida and Xiali Hei
+        conference: "BMC Medical Informatics and Decision Making, 2021"
 
 skills:
     title: Skills &amp; Proficiency
