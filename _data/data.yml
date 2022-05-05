@@ -50,7 +50,7 @@ sidebar:
 
 career-profile:
     title: Career Profile
-    summary: |
+#     summary: |
 #       Summarise your career here lorem ipsum dolor sit amet, consectetuer
 #       adipiscing elit. You can [download this free resume/CV template here]().
 #       Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
@@ -70,7 +70,7 @@ education:
           - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
           - Advior: Dr. Xiali (Sharon) Hei
     - degree: Bachelor's in Electronics and Communication Engineering
-      university: Khulna University of Engineering & Technology
+      university: Khulna University of Engineering &amp; Technology
       time: 2012 - 2016
 #       details: |
 #         Describe your study here lorem ipsum dolor sit amet, consectetuer
@@ -85,7 +85,7 @@ experiences:
       time: Aug 2018 – June 2019, June 2021 – May 2022
       company: University of Louisiana at Lafayette, Lafayette, LA
       details: |
-          - Member of the Wireless \& Embedded Device Security Lab advised by Professor Xiali Hei, focusing on CAPTCHA security and machine learning security
+          - Member of the Wireless &amp; Embedded Device Security Lab advised by Professor Xiali Hei, focusing on CAPTCHA security and machine learning security
           - Published and presented research at various top-tier computer security workshops and conferences
     - role: Graduate Teaching Assistant
       time: Jan 2020 - May 2021
@@ -117,20 +117,20 @@ projects:
     assignments:
       - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (Facebook)
         link: "#hook"
-        tagline: |
-        - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
-        - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
+#         tagline: |
+#         - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
+#         - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
 
       - title: Deep Learning attacks against real-world CAPTCHA services
         link: "#"
-        tagline: |
-        - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
+#         tagline: |
+#         - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
 
       - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
         link: "#"
-        tagline: |
-        - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
-        - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
+#         tagline: |
+#         - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
+#         - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
 
 #       - title: Atom
 #         link: "#"
@@ -150,7 +150,7 @@ publications:
       - title: "aaeCAPTCHA: The design and implementation of audio adversarial CAPTCHA"
         link: "#"
         authors: Md Imran Hossen and Xiali Hei
-        conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&amp;P), 2022."
+        conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&;P), 2022."
 
       - title: "A Low-Cost Attack against the hCaptcha System"
         link: "#"
