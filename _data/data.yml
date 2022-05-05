@@ -61,14 +61,14 @@ education:
     - degree: PhD in Computer Science
       university: University of Louisiana at Lafayette
       time: Aug 2021 - May 2022
-#       details: |
+      details: |
 #          Describe your study here lorem ipsum dolor sit amet, consectetuer
 #          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
 #          sociis natoque penatibus et magnis dis parturient montes, nascetur
 #          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
 #          pretium quis, sem.
-#           - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
-#           - Advior: Dr. Xiali (Sharon) Hei
+          - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
+          - Advior: Dr. Xiali (Sharon) Hei
     - degree: Bachelor's in Electronics and Communication Engineering
       university: Khulna University of Engineering &amp; Technology
       time: 2012 - 2016
