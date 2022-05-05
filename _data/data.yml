@@ -117,7 +117,7 @@ projects:
     assignments:
       - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (Facebook)
         link: "#hook"
-        tagline: 
+        tagline: |
         - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
         - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
 
