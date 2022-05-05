@@ -28,7 +28,10 @@
       </span>
 
       {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+       <div class="intro">
+       <! -- - <span class="project-tagline">{{ project.tagline }}</span> -->
+         <p>{{ project.tagline }}</p>
+       </div><!--//intro-->
       {% endif %}
 
     </div><!--//item-->
