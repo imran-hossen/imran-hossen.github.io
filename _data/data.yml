@@ -65,7 +65,7 @@ education:
       - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
       - Advior: Dr. Xiali (Sharon) Hei
   - degree: Bachelor's in Electronics and Communication Engineering
-    university: Khulna University of Engineering &amp; Technology
+    university: Khulna University of Engineering & Technology
     time: 2012 - 2016
 #       details: |
 #         Describe your study here lorem ipsum dolor sit amet, consectetuer
@@ -77,21 +77,21 @@ education:
 #           - Bullet point
 experiences:
   - role: Graduate Research Assistant
-    time: Aug 2018 – June 2019, June 2021 – May 2022
+    time: Jun 2021 – May 2022
     company: University of Louisiana at Lafayette, Lafayette, LA
     details: |
-      - Member of the Wireless &amp; Embedded Device Security Lab advised by Professor Xiali Hei, focusing on CAPTCHA security and machine learning security
+      - Designed and implemented the first secure and usable Audio Adversarial CAPTCHA system to improve the security of real-world audio CAPTCHAs against state-of-the-art ASR models
       - Published and presented research at various top-tier computer security workshops and conferences
   - role: Graduate Teaching Assistant
     time: Jan 2020 - May 2021
     company: University of Louisiana at Lafayette, Lafayette, LA
     details: |
-      - Introduction to Cyber Security (CMPS 315)
+      - Assisted students with coding assignments and projects for the Introduction to Cyber Security (CMPS 315) course
   - role: Graduate Teaching Assistant
     time: Aug 2019 – Dec 2019
     company: University of Louisiana at Lafayette, Lafayette, LA
     details: |
-      - Linux System Administration and Maintenance (INFX 450)
+      - Assisted students with coding assignments and projects for the Linux System Administration and Maintenance (INFX 450) course
 #     - role: UI Developer
 #       time: 2012 - 2014
 #       company: Amazon, London
@@ -103,6 +103,12 @@ experiences:
 #         pellentesque eu, pretium quis, sem.
 #           - Bullet point
 #           - Bullet point
+   - role: Graduate Research Assistant
+      time: Aug 2018 – July 2019
+      company: University of Louisiana at Lafayette, Lafayette, LA
+      details: |
+        - Conducted research on the robustness of widely used image CAPTCHAs against current machine learning and deep learning technologies
+        - Published and presented research at various top-tier computer security workshops and conferences
 projects:
   title: Projects
   #     intro: >
@@ -110,22 +116,27 @@ projects:
   #       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
-    - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (Facebook)
+    - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (funded by Facebook)
       link: "#hook"
       tagline: |
-        - Developed data loaders, models and training strategies to learn from limited fNIRS data in a federated learning setting.
-        - Implemented differential privacy and other privacy-preserving learning techniques to prevent the privacy leakage of training data.
-
-    - title: Deep Learning attacks against real-world CAPTCHA services
+        - Leading a 3-person team to develop data loaders, models, and training strategies to learn from limited fNIRS data in a Federated Learning setting
+        - Implementing differential privacy and other privacy-preserving machine learning techniques to prevent the privacy leakage of training data
+    - title: Deep Learning attack against the hCaptcha system
       link: "#"
       tagline: |
-        - Developed a fully automated DL-based solver that can completely break reCAPTCHA v2, the most popular CAPTCHA system on the entire Internet.
-
+        - hCaptha system is the 2nd most widely used CAPTCHA service in the US
+        - Developed a system employing deep learning models and computer vision tools to break hCaptcha
+        - Evaluated the effectiveness and efficiency of the system by solving hCaptcha challenges automatically from live websites with over 95% accuracy
+    - title: Deep Learning attack against the Google's image reCAPTCHA v2
+      link: "#"
+      tagline: |
+        - reCAPTCHA v2 is the most popular CAPTCHA service on the entire Internet
+        - Developed a fully automated system utilizing web automation software and an object detection model to break Google’s reCAPTCHA v2 with over 83% accuracy   
     - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
       link: "#"
       tagline: |
-        - Developed a pipeline for extracting, preprocessing and cleaning unstructured data from online hackers' forums.
-        - Implemented both the ML and DL models to classify the forum posts into different threat categories. Utilized NLP, Word2Vec, and Top Modeling to uncover current cyber threats.
+        - Developed a pipeline for scraping, preprocessing, and cleaning unstructured data from online hackers’ forums
+        - Implemented both ML (Logistic Regression, Random Forest, Decision Tree, kNN, etc.) and DL models to classify the forum posts into different threat categories. Utilized NLP and Top Modeling to uncover current cyber threats
 
 #       - title: Atom
 #         link: "#"
