@@ -15,7 +15,7 @@ experiences:
   - 
     company: "University of Louisiana at Lafayette, Lafayette, LA"
     details: |
-        - Designed and implemented the first secure and usable Audio Adversarial CAPTCHA system to improve the security of real-world audio CAPTCHAs against state-of-the-art ASR models
+        - Designed and implemented the first secure and usable Audio Adversarial CAPTCHA system to improve the security of real-world audio CAPTCHAs against state-of-the-art Automatic Speech Recognition (ASR) models
         - Published and presented research at various top-tier computer security workshops and conferences
     role: "Graduate Research Assistant"
     time: "Jun 2021 – May 2022"
@@ -43,6 +43,7 @@ projects:
       tagline: |
           - Leading a 3-person team to develop data loaders, models, and training strategies to learn from limited fNIRS data in a Federated Learning setting
           - Implementing differential privacy and other privacy-preserving machine learning techniques to prevent the privacy leakage of training data
+          - Tech stack: PyTorch, PySyft, Opacus
       title: "Privacy-Preserving Federated Learning for Minimized fNIRS Data (funded by Facebook)"
     - 
       link: "#"
@@ -50,24 +51,28 @@ projects:
           - hCaptha system is the 2nd most widely used CAPTCHA service in the US
           - Developed a system employing deep learning models and computer vision tools to break hCaptcha
           - Evaluated the effectiveness and efficiency of the system by solving hCaptcha challenges automatically from live websites with over 95% accuracy
+          - Tech stack: Python, PyTorch, JavaScript, Puppeteer
       title: "Deep Learning attack against the hCaptcha system"
     - 
       link: "#"
-      tagline: "- reCAPTCHA v2 is the most popular CAPTCHA service on the entire Internet\n\
-          - Developed a fully automated system utilizing web automation software and an object detection model to break Google’s reCAPTCHA v2 with over 83% accuracy   \n"
+      tagline: |
+          - reCAPTCHA v2 is the most popular CAPTCHA service on the entire Internet
+          - Developed a fully automated system utilizing web automation software and an object detection model to break Google's reCAPTCHA v2 with over 83% accuracy
+          - Tech stack: JavaScript, Selenium/Puppeteer, Python, TensorFlow, C, Darknet
       title: "Deep Learning attack against the Google's image reCAPTCHA v2"
     - 
       link: "#"
       tagline: |
-          - Developed a pipeline for scraping, preprocessing, and cleaning unstructured data from online hackers’ forums
-          - Implemented both ML (Logistic Regression, Random Forest, Decision Tree, kNN, etc.) and DL models to classify the forum posts into different threat categories. Utilized NLP and Top Modeling to uncover current cyber threats
+          - Developed a pipeline for scraping, preprocessing, and cleaning unstructured data from online hackers' forums
+          - Implemented both ML (Logistic Regression, Random Forest, Decision Tree, k-NN, etc.) and DL models to classify the forum posts into different threat categories. Utilized NLP and Top Modeling to uncover current cyber threats
+          - Tech stack:  Scikit-learn, Word2Vec, NLTK, SpaCy, Gensim, Keras
       title: "Automated Extraction of Cyber Threat Intelligence from unstructured data"
   title: Projects
 publications: 
   papers: 
     - 
       authors: "Md Imran Hossen and Xiali Hei"
-      conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&;P), 2022."
+      conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&P), 2022."
       link: "#"
       title: "aaeCAPTCHA: The design and implementation of audio adversarial CAPTCHA"
     - 
@@ -77,7 +82,7 @@ publications:
       title: "A Low-Cost Attack against the hCaptcha System"
     - 
       authors: "Md Imran Hossen, Yazhou Tu, Md Fazle Rabby, Md Nazmul Islam, Hui Cao, and Xiali Hei"
-      conference: "23rd International Symposium on Research in Attacks, Intrusions and Defenses (RAID), 2020"
+      conference: "23rd International Symposium on Research in Attacks, Intrusions, and Defenses (RAID), 2020"
       link: "#"
       title: "An object detection based solver for Google's image reCAPTCHA v2"
     - 
@@ -124,7 +129,7 @@ skills:
       name: "TensorFlow & PyTorch"
     - 
       level: 95%
-      name: Scikit-learn
+      name: "Scikit-learn, SpaCy, SciPy"
     - 
       level: 90%
       name: "Numpy, Pandas & matplotlib"
@@ -141,14 +146,14 @@ skills:
       level: 55%
       name: "C & C++"
     - 
-      level: 80%
-      name: LaTex
-    - 
       level: 100%
       name: Linux
     - 
       level: 85%
-      name: "Git & Docker"
+      name: Git
     - 
       level: 85%
-      name: "GCP & AWS"
+      name: "Docker & Kubernetes"
+    - 
+      level: 85%
+      name: "Google Cloud & AWS"
