@@ -1,217 +1,154 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
-sidebar:
-  #     about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
-
-  # Profile information
-  name: Md Imran Hossen
-  tagline:
-  avatar: # profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-  # Sidebar links
-  email: emraaan@rocketmail.com
-  phone: 337 255 9152
-  citizenship:
-  website: imran-hossen.github.io #do not add http://
-  linkedin: i-hossen
-  xing:
-  github: i-hossen
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  twitter:
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  pdf: https://www.dropbox.com/s/s7gseegqty4vcto/resume_imran_ml.pdf?dl=0
-
-  languages:
-    - idiom: Bangla
-      level: Native
-
-    - idiom: English
-      level: Professional
-
-#       - idiom: Spanish
-#         level: Professional
-
-#     interests:
-#       - item: Climbing
-#         link:
-
-#       - item: Snowboarding
-#         link:
-
-#       - item: Cooking
-#         link:
-
-career-profile:
-  title: Career Profile
-#     summary: |
-#       Summarise your career here lorem ipsum dolor sit amet, consectetuer
-#       adipiscing elit. You can [download this free resume/CV template here]().
-#       Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-#       penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-#       Donec quam felis, ultricies nec, pellentesque eu.
-#       Second paragraph if required.
-education:
-  - degree: PhD in Computer Science
-    university: University of Louisiana at Lafayette
-    time: Aug 2021 - May 2022
+--- 
+career-profile: 
+  title: "Career Profile"
+education: 
+  - 
+    degree: "Ph.D. in Computer Science"
     details: |
-      - Dissertation: Research on Attacks, Defenses and Designs of Image and Audio CAPTCHAs.
-      - Advior: Dr. Xiali (Sharon) Hei
-  - degree: Bachelor's in Electronics and Communication Engineering
-    university: Khulna University of Engineering & Technology
-    time: 2012 - 2016
-#       details: |
-#         Describe your study here lorem ipsum dolor sit amet, consectetuer
-#         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-#         sociis natoque penatibus et magnis dis parturient montes, nascetur
-#         ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-#         pretium quis, sem.
-#           - Bullet point
-#           - Bullet point
-experiences:
-  - role: Graduate Research Assistant
-    time: Jun 2021 – May 2022
-    company: University of Louisiana at Lafayette, Lafayette, LA
+        - Dissertation: Research on Attacks, Defenses, and Designs of Image and Audio CAPTCHAs.
+        - Advisor: Dr. Xiali (Sharon) Hei
+    time: "Aug 2021 - May 2022"
+    university: "University of Louisiana at Lafayette"
+  - 
+    degree: "Bachelor in Electronics and Communication Engineering"
+experiences: 
+  - 
+    company: "University of Louisiana at Lafayette, Lafayette, LA"
     details: |
-      - Designed and implemented the first secure and usable Audio Adversarial CAPTCHA system to improve the security of real-world audio CAPTCHAs against state-of-the-art ASR models
-      - Published and presented research at various top-tier computer security workshops and conferences
-  - role: Graduate Teaching Assistant
-    time: Jan 2020 - May 2021
-    company: University of Louisiana at Lafayette, Lafayette, LA
+        - Designed and implemented the first secure and usable Audio Adversarial CAPTCHA system to improve the security of real-world audio CAPTCHAs against state-of-the-art ASR models
+        - Published and presented research at various top-tier computer security workshops and conferences
+    role: "Graduate Research Assistant"
+    time: "Jun 2021 – May 2022"
+  - 
+    company: "University of Louisiana at Lafayette, Lafayette, LA"
+    details: "- Assisted students with coding assignments and projects for the Introduction to Cyber Security (CMPS 315) course\n"
+    role: "Graduate Teaching Assistant"
+    time: "Jan 2020 - May 2021"
+  - 
+    company: "University of Louisiana at Lafayette, Lafayette, LA"
+    details: "- Assisted students with coding assignments and projects for the Linux System Administration and Maintenance (INFX 450) course\n"
+    role: "Graduate Teaching Assistant"
+    time: "Aug 2019 – Dec 2019"
+  - 
+    company: "University of Louisiana at Lafayette, Lafayette, LA"
     details: |
-      - Assisted students with coding assignments and projects for the Introduction to Cyber Security (CMPS 315) course
-  - role: Graduate Teaching Assistant
-    time: Aug 2019 – Dec 2019
-    company: University of Louisiana at Lafayette, Lafayette, LA
-    details: |
-      - Assisted students with coding assignments and projects for the Linux System Administration and Maintenance (INFX 450) course
-#     - role: UI Developer
-#       time: 2012 - 2014
-#       company: Amazon, London
-#       details: |
-#         Describe your role here lorem ipsum dolor sit amet, consectetuer
-#         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-#         Cum sociis natoque penatibus et magnis dis parturient montes,
-#         nascetur ridiculus mus. Donec quam felis, ultricies nec,
-#         pellentesque eu, pretium quis, sem.
-#           - Bullet point
-#           - Bullet point
-   - role: Graduate Research Assistant
-      time: Aug 2018 – July 2019
-      company: University of Louisiana at Lafayette, Lafayette, LA
-      details: |
         - Conducted research on the robustness of widely used image CAPTCHAs against current machine learning and deep learning technologies
         - Published and presented research at various top-tier computer security workshops and conferences
-projects:
-  title: Projects
-  #     intro: >
-  #       You can list your side projects or open source libraries in this
-  #       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  #       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-    - title: Privacy-Preserving Federated Learning for Minimized fNIRS Data (funded by Facebook)
+    role: "Graduate Research Assistant"
+    time: "Aug 2018 – July 2019"
+projects: 
+  assignments: 
+    - 
       link: "#hook"
       tagline: |
-        - Leading a 3-person team to develop data loaders, models, and training strategies to learn from limited fNIRS data in a Federated Learning setting
-        - Implementing differential privacy and other privacy-preserving machine learning techniques to prevent the privacy leakage of training data
-    - title: Deep Learning attack against the hCaptcha system
+          - Leading a 3-person team to develop data loaders, models, and training strategies to learn from limited fNIRS data in a Federated Learning setting
+          - Implementing differential privacy and other privacy-preserving machine learning techniques to prevent the privacy leakage of training data
+      title: "Privacy-Preserving Federated Learning for Minimized fNIRS Data (funded by Facebook)"
+    - 
       link: "#"
       tagline: |
-        - hCaptha system is the 2nd most widely used CAPTCHA service in the US
-        - Developed a system employing deep learning models and computer vision tools to break hCaptcha
-        - Evaluated the effectiveness and efficiency of the system by solving hCaptcha challenges automatically from live websites with over 95% accuracy
-    - title: Deep Learning attack against the Google's image reCAPTCHA v2
+          - hCaptha system is the 2nd most widely used CAPTCHA service in the US
+          - Developed a system employing deep learning models and computer vision tools to break hCaptcha
+          - Evaluated the effectiveness and efficiency of the system by solving hCaptcha challenges automatically from live websites with over 95% accuracy
+      title: "Deep Learning attack against the hCaptcha system"
+    - 
+      link: "#"
+      tagline: "- reCAPTCHA v2 is the most popular CAPTCHA service on the entire Internet\n\
+          - Developed a fully automated system utilizing web automation software and an object detection model to break Google’s reCAPTCHA v2 with over 83% accuracy   \n"
+      title: "Deep Learning attack against the Google's image reCAPTCHA v2"
+    - 
       link: "#"
       tagline: |
-        - reCAPTCHA v2 is the most popular CAPTCHA service on the entire Internet
-        - Developed a fully automated system utilizing web automation software and an object detection model to break Google’s reCAPTCHA v2 with over 83% accuracy   
-    - title: Automated Extraction of Cyber Threat Intelligence from unstructured data
-      link: "#"
-      tagline: |
-        - Developed a pipeline for scraping, preprocessing, and cleaning unstructured data from online hackers’ forums
-        - Implemented both ML (Logistic Regression, Random Forest, Decision Tree, kNN, etc.) and DL models to classify the forum posts into different threat categories. Utilized NLP and Top Modeling to uncover current cyber threats
-
-#       - title: Atom
-#         link: "#"
-#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-#       - title: Delta
-#         link: "#"
-#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-publications:
-  title: Publications
-  #     intro: |
-  #       You can list your publications in this section. Lorem ipsum dolor sit
-  #       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-  #       bibendum fringilla a eu lectus.
-  papers:
-    - title: "aaeCAPTCHA: The design and implementation of audio adversarial CAPTCHA"
-      link: "#"
-      authors: Md Imran Hossen and Xiali Hei
+          - Developed a pipeline for scraping, preprocessing, and cleaning unstructured data from online hackers’ forums
+          - Implemented both ML (Logistic Regression, Random Forest, Decision Tree, kNN, etc.) and DL models to classify the forum posts into different threat categories. Utilized NLP and Top Modeling to uncover current cyber threats
+      title: "Automated Extraction of Cyber Threat Intelligence from unstructured data"
+  title: Projects
+publications: 
+  papers: 
+    - 
+      authors: "Md Imran Hossen and Xiali Hei"
       conference: "2022 IEEE European Symposium on Security and Privacy (EuroS&;P), 2022."
-
-    - title: "A Low-Cost Attack against the hCaptcha System"
       link: "#"
-      authors: Md Imran Hossen and Xiali Hei
+      title: "aaeCAPTCHA: The design and implementation of audio adversarial CAPTCHA"
+    - 
+      authors: "Md Imran Hossen and Xiali Hei"
       conference: "15th IEEE Workshop on Offensive Technologies (WOOT), 2021"
-
-    - title: "An object detection based solver for Google's image reCAPTCHA v2"
       link: "#"
-      authors: Md Imran Hossen, Yazhou Tu, Md Fazle Rabby, Md Nazmul Islam, Hui Cao, and Xiali Hei
+      title: "A Low-Cost Attack against the hCaptcha System"
+    - 
+      authors: "Md Imran Hossen, Yazhou Tu, Md Fazle Rabby, Md Nazmul Islam, Hui Cao, and Xiali Hei"
       conference: "23rd International Symposium on Research in Attacks, Intrusions and Defenses (RAID), 2020"
-
-    - title: "Stacked LSTM based deep recurrent neural network with kalman smoothing for blood glucose prediction"
       link: "#"
-      authors: Md Fazle Rabby, Yazhou Tu, Md Imran Hossen, Insup Lee, Anthony S. Maida and Xiali Hei
+      title: "An object detection based solver for Google's image reCAPTCHA v2"
+    - 
+      authors: "Md Fazle Rabby, Yazhou Tu, Md Imran Hossen, Insup Lee, Anthony S. Maida and Xiali Hei"
       conference: "BMC Medical Informatics and Decision Making, 2021"
-
-skills:
-  title: Skills &amp; Proficiency
-
-  toolset:
-    - name: Python
+      link: "#"
+      title: "Stacked LSTM based deep recurrent neural network with kalman smoothing for blood glucose prediction"
+  title: Publications
+sidebar: 
+  avatar: ~
+  bitbucket: ~
+  citizenship: ~
+  codewars: ~
+  education: true
+  email: emraaan@rocketmail.com
+  github: i-hossen
+  gitlab: ~
+  goodreads: ~
+  languages: 
+    - 
+      idiom: Bangla
+      level: Native
+    - 
+      idiom: English
+      level: Professional
+  linkedin: i-hossen
+  name: "Md Imran Hossen"
+  pdf: "https://www.dropbox.com/s/s7gseegqty4vcto/resume_imran_ml.pdf?dl=0"
+  phone: "337 255 9152"
+  stack-overflow: ~
+  tagline: ~
+  telegram: ~
+  twitter: ~
+  website: imran-hossen.github.io
+  xing: ~
+skills: 
+  title: "Skills & Proficiency"
+  toolset: 
+    - 
       level: 90%
-
-    - name: TensorFlow & PyTorch
+      name: Python
+    - 
       level: 95%
-
-    - name: Scikit-learn
+      name: "TensorFlow & PyTorch"
+    - 
       level: 95%
-      
-    - name: Numpy, Pandas & matplotlib
+      name: Scikit-learn
+    - 
       level: 90%
-
-    - name: Bash
+      name: "Numpy, Pandas & matplotlib"
+    - 
       level: 95%
-
-    - name: SQL
+      name: Bash
+    - 
       level: 90%
-
-    - name: JavaScript
+      name: SQL
+    - 
       level: 70%
-
-    - name: C & C++
+      name: JavaScript
+    - 
       level: 55%
-
-    - name: LaTex
+      name: "C & C++"
+    - 
       level: 80%
-
-    - name: Linux
+      name: LaTex
+    - 
       level: 100%
-
-    - name: Git & Docker
+      name: Linux
+    - 
       level: 85%
-
-    - name: GCP & AWS
+      name: "Git & Docker"
+    - 
       level: 85%
-      
-# footer: >
-#     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+      name: "GCP & AWS"
