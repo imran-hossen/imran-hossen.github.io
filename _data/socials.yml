@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+# NOTE: email intentionally not listed here — the {% social_links %} tag emits a
+# raw mailto: ignoring protect_email. The protected address is rendered in
+# _pages/about.md via the al_email_protect_link tag (address in _config.yml).
+rss_icon: true # comment this line to hide the RSS icon
+scholar_userid: DoVUjOwAAAAJ # your Google Scholar ID
+github_username: i-hossen # code publishing account (site is served from the imran-hossen account)
+orcid_id: 0000-0002-5612-7858 # https://orcid.org/0000-0002-5612-7858

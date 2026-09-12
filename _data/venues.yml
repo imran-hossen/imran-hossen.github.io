@@ -1,0 +1,4 @@
+# venue metadata (url, color) keyed by abbreviation, used for badges on the publications page.
+# add entries as needed, e.g.
+# "USENIX":
+#   url: https://www.usenix.org/conference/usenixsecurity

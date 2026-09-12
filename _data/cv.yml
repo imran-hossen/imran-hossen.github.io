@@ -1,0 +1,103 @@
+cv:
+  name: Imran Hossen
+  label: Assistant Professor
+  email: mdimran-hossen@utc.edu
+  location: Chattanooga, TN, USA
+  image: ""
+  summary: >-
+    Tenure-track Assistant Professor at the University of Tennessee at Chattanooga. Research:
+    offensive security for AI systems — LLM and agent security, CAPTCHA attacks and
+    design, and physical / side-channel attacks on ML.
+
+  social_networks:
+    - network: Email
+      username: mdimran-hossen@utc.edu
+    - network: Google-Scholar-Profile
+      username: DoVUjOwAAAAJ
+
+  address:
+    street: University of Tennessee at Chattanooga
+    city: Chattanooga
+    region: Tennessee
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of Louisiana at Lafayette
+        location: Lafayette, LA, USA
+        area: Computer Science
+        studyType: Ph.D.
+        start_date: 2018-08
+        end_date: 2022-05
+        highlights:
+          - "Advisor: Dr. Xiali Hei"
+
+      - institution: Khulna University of Engineering & Technology
+        location: Khulna, Bangladesh
+        area: Electronics & Communications Engineering
+        studyType: B.S.
+        start_date: 2012-01
+        end_date: 2016-05
+
+    Experience:
+      - company: University of Tennessee at Chattanooga
+        position: Tenure-track Assistant Professor, Department of Computer Science and Engineering
+        location: Chattanooga, TN, USA
+        start_date: 2025-08
+        end_date: present
+
+      - company: University of Louisiana at Lafayette
+        position: Postdoctoral Researcher in AI Security
+        location: Lafayette, LA, USA
+        start_date: 2022-06
+        end_date: 2025-07
+        summary: >-
+          Studied security vulnerabilities in LLMs and AI coding assistants,
+          and led Meta-funded research on differential privacy for
+          federated learning with clinical data.
+
+      - company: University of Louisiana at Lafayette
+        position: Graduate Research Assistant
+        location: Lafayette, LA, USA
+        start_date: 2021-06
+        end_date: 2022-05
+        highlights:
+          - Designed and implemented aaeCAPTCHA, an audio CAPTCHA built on adversarial examples, and evaluated its resistance to modern ASR systems alongside human usability.
+          - Developed a low-resource automated solver that broke 95.93% of hCaptcha challenges in our 2021 study.
+          - Built an object-detection-based solver with an 83.25% success rate against Google's reCAPTCHA v2 in our 2020 online evaluation.
+          - Developed an NLP/ML framework for extracting cyber threat intelligence from hacker-forum data.
+
+      - company: University of Louisiana at Lafayette
+        position: Graduate Teaching Assistant
+        location: Lafayette, LA, USA
+        start_date: 2019-08
+        end_date: 2021-05
+        highlights:
+          - Taught Introduction to Cyber Security (CMPS 315) and System Administration and Maintenance (INFX 450).
+
+      - company: University of Louisiana at Lafayette
+        position: Graduate Research Assistant
+        location: Lafayette, LA, USA
+        start_date: 2018-08
+        end_date: 2019-07
+
+    Teaching:
+      - bullet: "**Fall 2026:** CPSC 3600 Principles of Information Security and Assurance (UTC)"
+      - bullet: "**Fall 2026:** CPSC 4660/5660 System Vulnerability Analysis and Auditing (UTC)"
+      - bullet: "**Spring 2026:** CPSC 4620/5620 Computer Network Security (UTC)"
+      - bullet: "**Fall 2025:** CPSC 4660 System Vulnerability Analysis and Auditing (UTC)"
+
+    Grants:
+      - bullet: "CyberAI Innovation: Closing the CyberAI Skills Gap Through Low-Barrier, Portable Laboratory Modules for AI-Augmented Security Operations and the Security of AI Systems. NSF, PI, $500,000 requested, 2027–2029 (**pending proposal**)."
+      - bullet: "Investigating Security Issues in Instruction-Tuned Large Language Code Models. NSF NAIRR Pilot, co-PI, 4,000 GPU hours of compute support, 2024."
+      - bullet: "Privacy-Preserving Federated Learning for Minimized fNIRS Data. Meta (Facebook), proposal writer, $149,180, 2021–2022."
+
+    Academic Service:
+      - bullet: "**Web Chair:** EAI SmartSP 2024 — International Conference on Security and Privacy in Cyber-Physical Systems and Smart Vehicles."
+      - bullet: "**Program Committee:** VehicleSec'25 (3rd USENIX Symposium on Vehicle Security and Privacy)."
+      - bullet: "**Reviewer:** ACM Transactions on Computing for Healthcare (HEALTH); USENIX Security 2020; IEEE EuroS&P 2022; IEEE Signal Processing Letters 2022; Journal of Information Security and Applications 2022."
+
+    Mentoring:
+      - bullet: "Research mentoring of Ph.D. students at UL Lafayette: Shovon Paul and Sai Venkatesh Chilukoti."
+
+  # Skills / Interests kept minimal — publications live on the publications page, driven by _bibliography/papers.bib
