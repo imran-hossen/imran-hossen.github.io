@@ -113,7 +113,10 @@ h4 {
 
 /* ---- navbar -------------------------------------------------------------- */
 
-.navbar {
+/* the core navbar is 95% opaque, which lets the page show through the open
+   mobile menu */
+#navbar.navbar {
+  opacity: 1;
   background-color: var(--global-bg-color);
   border-bottom: 1px solid var(--global-divider-color);
 }
@@ -158,6 +161,33 @@ h4 {
   &:hover {
     color: var(--global-theme-color);
   }
+}
+
+/* collapsed menu: nav links have no side padding there, so match them */
+@media (max-width: 575.98px) {
+  .navbar .nav-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* search palette (ninja-keys): mono input, square keys, theme tokens.
+   Results stay in the prose face; mono is too wide for their one-line clamp */
+ninja-keys {
+  --ninja-font-family: var(--site-sans);
+  --ninja-key-border-radius: 0;
+  --ninja-text-color: var(--global-text-color);
+  --ninja-secondary-text-color: var(--global-text-color-light);
+  --ninja-secondary-background-color: var(--global-card-bg-color);
+  --ninja-selected-background: var(--global-card-bg-color);
+  --ninja-group-text-color: var(--global-text-color-light);
+  --ninja-footer-background: var(--global-bg-color);
+  --ninja-placeholder-color: var(--global-text-color-light);
+  --ninja-modal-shadow: none;
+}
+
+ninja-keys::part(ninja-input) {
+  font-family: var(--site-mono);
 }
 
 /* ---- man-page frame (about page) ----------------------------------------- */
