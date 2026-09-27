@@ -1,0 +1,24 @@
+- institution: University of Tennessee at Chattanooga
+  courses:
+    - term: Fall 2026
+      code: CPSC 3600
+      title: Principles of Information Security and Assurance
+    - term: Fall 2026
+      code: CPSC 4660/5660
+      title: System Vulnerability Analysis and Auditing
+    - term: Spring 2026
+      code: CPSC 4620/5620
+      title: Computer Network Security
+    - term: Fall 2025
+      code: CPSC 4660
+      title: System Vulnerability Analysis and Auditing
+
+- institution: University of Louisiana at Lafayette
+  role: Graduate Teaching Assistant
+  courses:
+    - term: 2019–2021
+      code: CMPS 315
+      title: Introduction to Cyber Security
+    - term: 2019–2021
+      code: INFX 450
+      title: System Administration and Maintenance

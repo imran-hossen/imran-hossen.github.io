@@ -487,36 +487,166 @@ html .highlight span.nt {
   color: var(--global-text-color-light);
 }
 
-/* ---- CV ------------------------------------------------------------------ */
+/* ---- teaching: aligned course listing ------------------------------------ */
 
-.card {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0;
-  background-color: var(--global-card-bg-color);
-  box-shadow: none;
+.courses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 7rem 8.5rem 1fr;
+    column-gap: 1rem;
+    align-items: baseline;
+    margin: 0;
+    padding: 0.2rem 0;
+  }
 }
 
-.card .card-title {
-  font-size: 1.25rem;
+.course-term,
+.course-code {
+  font-family: var(--site-mono);
+  font-size: 0.875rem;
+}
+
+.course-term {
+  color: var(--global-text-color-light);
+}
+
+.course-code {
+  color: var(--global-theme-color);
+}
+
+.courses-role {
+  margin-bottom: 0.25rem;
+  color: var(--global-text-color-light);
+  font-size: 0.9375rem;
+}
+
+.courses-note {
+  margin-top: 2rem;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 575.98px) {
+  .courses li {
+    grid-template-columns: 6.5rem 1fr;
+    padding: 0.35rem 0;
+
+    .course-title {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+/* ---- CV: same man-page structure as the home page ------------------------ */
+
+.cv .card {
+  margin: 2.5rem 0 0 !important; /* beats the mt-3 utility */
+  padding: 0 !important; /* beats the p-3 utility */
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+
+  .card-title {
+    margin-bottom: 0.875rem;
+    font-family: var(--site-mono);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color);
+  }
+
+  @media (min-width: 768px) {
+    > :not(.card-title) {
+      margin-left: 2rem;
+    }
+  }
+
+  .list-group {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .list-group-item {
+    padding: 0.6rem 0;
+    border: 0;
+    background: none;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-text,
+  p,
+  li {
+    font-weight: 400;
+  }
+
+  h6 {
+    margin: 0 !important; /* beats the ml-md-4 utilities */
+    font-family: var(--site-sans);
+    font-size: 1rem !important;
+  }
+
+  h6.title {
+    font-weight: 600;
+  }
+
+  h6:not(.title) {
+    color: var(--global-text-color-light);
+  }
 }
 
 /* the CV gem paints these with !important at .cv .card .list-group-item .badge */
 .cv .card .list-group-item .date-column .badge {
+  min-width: 0 !important;
   padding: 0;
   background: none !important;
-  color: var(--global-theme-color) !important;
+  color: var(--global-text-color-light) !important;
   font-family: var(--site-mono);
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.cv .date-column {
+  width: auto;
+  transform: none;
+  text-align: left !important;
+
+  .location {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+
+  /* no icon font is loaded, so drop the empty location-pin elements */
+  .iconlocation {
+    display: none;
+  }
+}
+
+.cv .table-cv td {
+  padding: 0.15rem 1rem 0.15rem 0 !important;
+  border: 0;
+  font-weight: 400;
+
+  &:first-child {
+    white-space: nowrap;
+  }
+}
+
+/* the CV table of contents copies the uppercase section titles; set it in mono */
+#toc-sidebar a {
+  font-family: var(--site-mono);
   font-size: 0.75rem;
-}
-
-.date-column .location {
-  color: var(--global-text-color-light);
-}
-
-/* no icon font is loaded, so drop the CV's empty location-pin elements */
-.date-column .iconlocation {
-  display: none;
+  letter-spacing: 0.04em;
 }
 
 /* ---- misc ---------------------------------------------------------------- */

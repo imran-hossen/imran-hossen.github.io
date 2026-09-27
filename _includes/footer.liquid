@@ -12,3 +12,6 @@
     <span>{{ site.last_name | upcase }}(1)</span>
   </div>
 </footer>
+{% if site.search_enabled %}
+  <script defer src="{{ '/assets/js/search-frame.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
