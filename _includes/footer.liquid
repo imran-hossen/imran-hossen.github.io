@@ -1,0 +1,14 @@
+{%- comment -%}
+  Site override of al_folio_core's footer: a man-page footer line
+  (author and page name) on the page background, never fixed.
+{%- endcomment -%}
+<footer class="man-foot" role="contentinfo">
+  <div class="container">
+    <span
+      >&copy; {{ site.time | date: '%Y' }}
+      {{ site.first_name }}
+      {{ site.last_name -}}
+    </span>
+    <span>{{ site.last_name | upcase }}(1)</span>
+  </div>
+</footer>

@@ -1,0 +1,31 @@
+{%- comment -%}
+  Site override of al_folio_core's news table: a `git log`-style list with
+  ISO dates in a fixed mono column.
+{%- endcomment -%}
+<div class="news">
+  {% if site.news != blank %}
+    {% assign news_size = site.news | size %}
+    {% assign news = site.news | reverse %}
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+    <ol class="log">
+      {% for item in news limit: news_limit %}
+        <li>
+          <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y-%m-%d' }}</time>
+          <div class="log-msg">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p>No news so far.</p>
+  {% endif %}
+</div>

@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{%- comment -%}
+  Site override of al_folio_core's about layout.
+  Framed as a man page: a HOSSEN(1) running header, uppercase section
+  headings, and a SEE ALSO line in place of the social icon row.
+{%- endcomment -%}
+{%- assign man_name = site.last_name | upcase | append: '(1)' -%}
+<div class="post">
+  <div class="man-head" aria-hidden="true">
+    <span>{{ man_name }}</span>
+    <span class="man-head-center">{{ site.man_center }}</span>
+    <span>{{ man_name }}</span>
+  </div>
+
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    <div class="clearfix">{{ content }}</div>
+
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="man-section">
+        <h2 class="man-sh"><a href="{{ '/news/' | relative_url }}">News</a></h2>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
+
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <section class="man-section">
+        <h2 class="man-sh"><a href="{{ '/blog/' | relative_url }}">Latest posts</a></h2>
+        {% include latest_posts.liquid %}
+      </section>
+    {% endif %}
+
+    {% if page.selected_papers %}
+      <section class="man-section">
+        <h2 class="man-sh"><a href="{{ '/publications/' | relative_url }}">Selected publications</a></h2>
+        {% include selected_papers.liquid %}
+      </section>
+    {% endif %}
+
+    {% if page.social %}
+      {%- assign s = site.data.socials -%}
+      <section class="man-section">
+        <h2 class="man-sh">See also</h2>
+        <p class="see-also">
+          {%- if s.scholar_userid -%}
+            <a href="https://scholar.google.com/citations?user={{ s.scholar_userid }}">Google Scholar</a>
+          {%- endif -%}
+          {%- if s.github_username -%}
+            , <a href="https://github.com/{{ s.github_username }}">GitHub</a>
+          {%- endif -%}
+          {%- if s.orcid_id -%}
+            , <a href="https://orcid.org/{{ s.orcid_id }}">ORCID</a>
+          {%- endif -%}
+          {%- if s.rss_icon -%}
+            , <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+          {%- endif -%}
+        </p>
+      </section>
+    {% endif %}
+  </article>
+</div>

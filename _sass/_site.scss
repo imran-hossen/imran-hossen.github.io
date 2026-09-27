@@ -1,0 +1,503 @@
+/*******************************************************************************
+ * Site identity: a man page on an amber terminal.
+ *
+ * Loaded last from assets/css/main.scss, so equal-specificity rules here win
+ * over the al_folio_core partials. Colors come from the tokens in _themes.scss.
+ *
+ * Rules of the house:
+ *  - Mono (IBM Plex Mono) marks structure and metadata: brand, nav, headings,
+ *    dates, venue tags, links rows. Prose stays in IBM Plex Sans.
+ *  - Amber is the only accent. No glows, gradients, scanlines or animation.
+ *  - One signature (the HOSSEN(1) man-page frame); everything else is quiet.
+ ******************************************************************************/
+
+:root {
+  --site-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --site-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---- type ---------------------------------------------------------------- */
+
+body {
+  font-family: var(--site-sans);
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+.navbar-brand,
+.nav-link,
+h1,
+h2,
+h3,
+h4,
+.post-title,
+code,
+kbd,
+pre,
+time {
+  font-family: var(--site-mono);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.post-header .post-title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+
+  .font-weight-bold {
+    font-weight: 600;
+  }
+}
+
+.post-header .desc,
+.post-header .post-description {
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+}
+
+.post h2 {
+  font-size: 1.25rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.post h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+  .post-header .post-title {
+    font-size: 1.875rem;
+  }
+}
+
+/* ---- links and focus ----------------------------------------------------- */
+
+/* amber alone is too close to the body text's luminance to mark a link, so
+   prose links also carry a thin underline */
+.post article :is(p, li, .log-msg) > a,
+.post-header .desc a,
+.post-description a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--global-theme-color) 30%, transparent);
+}
+
+/* ---- navbar -------------------------------------------------------------- */
+
+.navbar {
+  background-color: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.navbar-brand {
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--global-text-color);
+
+  .font-weight-bold {
+    font-weight: 600;
+  }
+}
+
+.navbar .nav-link {
+  font-size: 0.9375rem;
+}
+
+/* search and theme controls are words, set like the nav links */
+#search-toggle,
+#light-toggle {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  transform: none; /* the core navbar nudges the icon toggle down 4px */
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar .nav-text {
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: var(--site-mono);
+  font-size: 0.9375rem;
+  color: var(--global-text-color-light);
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+/* ---- man-page frame (about page) ----------------------------------------- */
+
+.man-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  font-family: var(--site-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 575.98px) {
+  .man-head-center {
+    display: none;
+  }
+}
+
+/* inner pages: the running header sits in the site header, above the title */
+.man-head.man-head-page {
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
+}
+
+.post h2.man-sh {
+  margin: 2.5rem 0 0.875rem;
+  font-family: var(--site-mono);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+/* body text under a section heading is indented, as in a man page */
+@media (min-width: 768px) {
+  .man-section > :not(.man-sh),
+  .post .clearfix h2.man-sh ~ * {
+    margin-left: 2rem;
+  }
+}
+
+.see-also {
+  font-family: var(--site-mono);
+  font-size: 0.9375rem;
+}
+
+/* ---- footer -------------------------------------------------------------- */
+
+/* keep the footer at the bottom of short pages (404, news) */
+body.sticky-bottom-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > [role="main"] {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
+footer.man-foot {
+  margin-top: 4rem;
+  padding: 1.25rem 0 2rem;
+  border-top: 1px solid var(--global-divider-color);
+  background-color: var(--global-footer-bg-color);
+  font-family: var(--site-mono);
+  font-size: 0.8125rem;
+  color: var(--global-footer-text-color);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+}
+
+/* ---- news: git-log list -------------------------------------------------- */
+
+.news ol.log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.25rem;
+    align-items: baseline;
+    padding: 0.3rem 0;
+  }
+
+  time {
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+/* ---- publications -------------------------------------------------------- */
+
+.publications h2.bibliography {
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  text-align: left;
+  font-family: var(--site-mono);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 1.5rem;
+
+  /* the gem leaves col-sm-2 empty on the right; give it to the entry text */
+  @media (min-width: 576px) {
+    .col-sm-8 {
+      flex: 0 0 83.333%;
+      max-width: 83.333%;
+    }
+  }
+
+  .venue {
+    display: inline-block;
+    font-family: var(--site-mono);
+    font-size: 0.8125rem;
+    line-height: 1.9;
+    white-space: nowrap;
+    color: var(--global-theme-color);
+
+    &::before {
+      content: "[";
+    }
+
+    &::after {
+      content: "]";
+    }
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .author,
+  .periodical {
+    font-size: 0.9375rem;
+  }
+
+  .periodical {
+    color: var(--global-text-color-light);
+  }
+
+  .author > em {
+    border-bottom: 0;
+    font-weight: 500;
+  }
+
+  .links,
+  .badges {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.875rem;
+    margin-top: 0.3rem;
+    padding: 0;
+    font-family: var(--site-mono);
+    font-size: 0.8125rem;
+  }
+
+  .links:has(a) + .badges {
+    margin-left: 0.875rem;
+  }
+
+  .links:not(:has(a)),
+  .badges:not(:has(a)) {
+    display: none;
+  }
+
+  .links a.btn {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    color: var(--global-theme-color);
+
+    &::before {
+      content: "[";
+      color: var(--global-text-color-light);
+    }
+
+    &::after {
+      content: "]";
+      color: var(--global-text-color-light);
+    }
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+    }
+  }
+
+  .badges .cites {
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+#bibsearch {
+  width: 100%;
+  max-width: 22rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-family: var(--site-mono);
+  font-size: 0.875rem;
+
+  &::placeholder {
+    color: var(--global-text-color-light);
+  }
+
+  &:focus {
+    border-color: var(--global-theme-color);
+  }
+}
+
+/* ---- code ---------------------------------------------------------------- */
+
+:not(pre) > code {
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+  background: var(--global-code-bg-color);
+  color: var(--global-text-color);
+}
+
+html .highlight pre,
+pre {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background: var(--global-code-bg-color);
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+
+  code {
+    padding: 0;
+    background: none;
+    color: var(--global-text-color);
+  }
+}
+
+/* two-tone syntax: commands in amber, everything else ink or dim.
+   `span[class]` outranks the pygments theme sheets, which load after this one */
+html .highlight span[class] {
+  color: var(--global-text-color);
+  font-weight: 400;
+  font-style: normal;
+}
+
+html .highlight span.nb,
+html .highlight span.k,
+html .highlight span.kd,
+html .highlight span.nf {
+  color: var(--global-theme-color);
+}
+
+html .highlight span.c,
+html .highlight span.c1,
+html .highlight span.cm,
+html .highlight span.o,
+html .highlight span.nt {
+  color: var(--global-text-color-light);
+}
+
+/* ---- CV ------------------------------------------------------------------ */
+
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background-color: var(--global-card-bg-color);
+  box-shadow: none;
+}
+
+.card .card-title {
+  font-size: 1.25rem;
+}
+
+/* the CV gem paints these with !important at .cv .card .list-group-item .badge */
+.cv .card .list-group-item .date-column .badge {
+  padding: 0;
+  background: none !important;
+  color: var(--global-theme-color) !important;
+  font-family: var(--site-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.date-column .location {
+  color: var(--global-text-color-light);
+}
+
+/* no icon font is loaded, so drop the CV's empty location-pin elements */
+.date-column .iconlocation {
+  display: none;
+}
+
+/* ---- misc ---------------------------------------------------------------- */
+
+html #back-to-top {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+}
+
+.err404 .err404-path {
+  color: var(--global-theme-color);
+}

@@ -1,0 +1,4 @@
+# map coauthor last names (lowercase) to first-name variants + link; used by jekyll-scholar author annotations
+# "hei":
+#   - firstname: ["Xiali"]
+#     url: https://www.xialihei.com/
